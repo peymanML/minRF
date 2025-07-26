@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Train MNIST",
+            "type": "shell",
+            "command": ". /opt/anaconda3/etc/profile.d/conda.sh && conda activate DIT_RF && python3 minRF/rf.py",
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Train CIFAR-10", 
+            "type": "shell",
+            "command": ". /opt/anaconda3/etc/profile.d/conda.sh && conda activate DIT_RF && python3 minRF/rf.py --cifar",
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
